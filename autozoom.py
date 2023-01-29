@@ -67,8 +67,8 @@ if __name__ == '__main__':
 
   fltRatio = float(intWidth) / float(intHeight)
 
-  intWidth = min(int(3480 * fltRatio), 3480)
-  intHeight = min(int(3480 / fltRatio), 3480)
+  intWidth = min(int(3200 * fltRatio), 3200)
+  intHeight = min(int(3200 / fltRatio), 3200)
 
   npyImage = cv2.resize(src=npyImage, dsize=(intWidth, intHeight), fx=0.0, fy=0.0, interpolation=cv2.INTER_AREA)
   process_load(npyImage, {})
